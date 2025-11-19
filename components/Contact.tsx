@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Copy, Check, Mail, Sparkles } from 'lucide-react';
+import { Copy, Check, Sparkles } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 
 const Contact: React.FC = () => {

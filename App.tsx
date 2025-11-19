@@ -1,6 +1,6 @@
 import React, { useState, useEffect, Suspense, lazy } from 'react';
 import { motion, AnimatePresence, useMotionValue, useSpring, useTransform } from 'framer-motion';
-import { ArrowUpRight, Github, Linkedin, Twitter, Globe, Cpu, Layers, Zap, Command, Terminal, X, Moon, Sun, Search, User, Mail } from 'lucide-react';
+import { ArrowUpRight, Github, Linkedin, Twitter, Globe, Cpu, Layers, Zap, Command, Terminal, Moon, Sun, Search, User, Mail } from 'lucide-react';
 
 import CustomCursor from './components/CustomCursor';
 import BentoItem from './components/BentoItem';

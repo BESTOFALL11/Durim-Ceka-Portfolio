@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react';
+import React, { useRef } from 'react';
 import { motion, useMotionValue, useSpring, useTransform } from 'framer-motion';
 
 interface BentoItemProps {
@@ -21,7 +21,6 @@ const BentoItem: React.FC<BentoItemProps> = ({
   id
 }) => {
   const ref = useRef<HTMLDivElement>(null);
-  const [hovered, setHovered] = useState(false);
 
   const x = useMotionValue(0);
   const y = useMotionValue(0);
@@ -59,7 +58,6 @@ const BentoItem: React.FC<BentoItemProps> = ({
   const handleMouseLeave = () => {
     x.set(0);
     y.set(0);
-    setHovered(false);
   };
 
   return (
@@ -68,7 +66,6 @@ const BentoItem: React.FC<BentoItemProps> = ({
       ref={ref}
       className={`relative ${colSpan} ${rowSpan} h-full w-full group perspective-container z-0`}
       onMouseMove={handleMouseMove}
-      onMouseEnter={() => setHovered(true)}
       onMouseLeave={handleMouseLeave}
       initial={{ opacity: 0, scale: 0.95, y: 20 }}
       whileInView={{ opacity: 1, scale: 1, y: 0 }}
