@@ -4,5 +4,5 @@ import react from '@vitejs/plugin-react'
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: './', // Ensures relative paths for assets, fixing white screen on subpath deployments
+  base: '/Durim-Ceka-Portfolio/', // Ensures assets are loaded correctly on GitHub Pages
 })

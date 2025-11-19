@@ -2,6 +2,7 @@
   "name": "kinetic-portfolio",
   "private": true,
   "version": "0.0.1",
+  "homepage": "https://bestofall11.github.io/Durim-Ceka-Portfolio/",
   "type": "module",
   "scripts": {
     "dev": "vite",
